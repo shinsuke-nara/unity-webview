@@ -72,7 +72,7 @@ public class WebViewPlugin
 		final Activity a = UnityPlayer.currentActivity;
 		a.runOnUiThread(new Runnable() {public void run() {
 
-			mWebView = new WebView(a);
+			mWebView = new CustomWebView(a);
 			mWebView.setVisibility(View.GONE);
 			mWebView.setFocusable(true);
 			mWebView.setFocusableInTouchMode(true);
